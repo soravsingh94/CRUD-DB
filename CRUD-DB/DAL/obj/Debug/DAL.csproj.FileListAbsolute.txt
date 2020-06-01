@@ -1,0 +1,5 @@
+D:\CRUD\CRUD-DB\DAL\bin\Debug\DAL.dll
+D:\CRUD\CRUD-DB\DAL\bin\Debug\DAL.pdb
+D:\CRUD\CRUD-DB\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\CRUD\CRUD-DB\DAL\obj\Debug\DAL.dll
+D:\CRUD\CRUD-DB\DAL\obj\Debug\DAL.pdb
