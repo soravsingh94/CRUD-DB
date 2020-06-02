@@ -81,3 +81,6 @@ D:\CRUD\CRUD-DB\CRUD-Backend\obj\Debug\CRUD-Backend.dll
 D:\CRUD\CRUD-DB\CRUD-Backend\obj\Debug\CRUD-Backend.pdb
 D:\CRUD\CRUD-DB\CRUD-Backend\bin\DAL.dll
 D:\CRUD\CRUD-DB\CRUD-Backend\bin\DAL.pdb
+D:\CRUD\CRUD-DB\CRUD-Backend\bin\System.Web.Cors.dll
+D:\CRUD\CRUD-DB\CRUD-Backend\bin\System.Web.Http.Cors.dll
+D:\CRUD\CRUD-DB\CRUD-Backend\bin\System.Web.Http.Cors.xml

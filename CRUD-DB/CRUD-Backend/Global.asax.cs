@@ -19,5 +19,17 @@ namespace CRUD_Backend
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        protected void Application_BeginRequest(object sender,EventArgs e)
+        {
+            if (Context.Request.HttpMethod.ToUpper() == "OPTIONS")
+            {
+                Context.Response.AddHeader("Access-Control-Allow-Origin", Context.Request.Headers["Origin"]);
+                Context.Response.AddHeader("Access-Control-Allow-Headers", "Origin, Token, X-Requested-With, Content-Type, Accept");
+                Context.Response.AddHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+                Context.Response.AddHeader("Access-Control-Allow-Credentials", "true");
+                Context.Response.End();
+            }
+        }
     }
 }

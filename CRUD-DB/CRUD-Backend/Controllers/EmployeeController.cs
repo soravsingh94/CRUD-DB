@@ -16,7 +16,7 @@ namespace CRUD_Backend.Controllers
             _commandHandler = new DbCommandHandler();
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("getemployee")]
         public IList<Employee> GetEmployeeInfo()
         {
