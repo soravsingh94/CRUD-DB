@@ -11,6 +11,7 @@ export class GridComponent implements OnInit {
   @Input() rows: any;
   @Input() cols: any;
   @Input() headerName: any;
+  @Input() editing: any;
 
   ngOnInit() {
     // this.users = [

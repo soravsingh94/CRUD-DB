@@ -4,10 +4,12 @@
   </ng-template>
   <ng-template pTemplate="header" let-columns>
     <tr>
-      <th *ngFor="let col of columns" [pSortableColumn]="col.field">
-        {{col.header}}
-        <p-sortIcon [field]="col.field"></p-sortIcon>
-      </th>
+      <ng-container *ngFor="let col of columns">
+        <th [pSortableColumn]="col.field">
+          {{col.header}}
+          <p-sortIcon [field]="col.field"></p-sortIcon>
+        </th>
+      </ng-container>
     </tr>
     <tr>
       <th *ngFor="let col of columns" [ngSwitch]="col.field">
@@ -16,10 +18,15 @@
     </tr>
   </ng-template>
   <ng-template pTemplate="body" let-user let-columns="columns">
-    <tr>
-      <td *ngFor="let col of columns">
-        {{user[col.field]}}
-      </td>
-    </tr>
+    <ng-container *ngIf="!editing">
+      <tr>
+        <ng-container *ngFor="let col of columns">
+          <td>
+            {{user[col.field]}}
+          </td>
+        </ng-container>
+      </tr>
+    </ng-container>
+
   </ng-template>
 </p-table>
